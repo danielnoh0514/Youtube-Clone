@@ -1,0 +1,11 @@
+extends base.pug
+include mixins/videos.pug
+block content  
+    h3 Welcome here you wlil see the trending videos
+    ul
+      each a in videos
+        +video(a)
+
+    
+     
+

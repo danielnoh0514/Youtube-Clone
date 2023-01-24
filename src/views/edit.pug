@@ -1,0 +1,10 @@
+extends base.pug
+
+block content
+    h4 Change Title of the Video
+    //- action is where I'm going to send the data
+    //- use post when you are sending a file or modify database
+    form(method="POST")
+        input(name="title" required   placeholder="Video Title", value=video.title)
+        input(type="submit", value="Save")
+
